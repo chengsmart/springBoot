@@ -6,7 +6,7 @@ jdbc:
   databaseName: student
   serverName: 127.0.0.1
   username: root
-  password: 123456
+  password:
   cachePrepStmts: true
   prepStmtsSize: 250
   prepStmtsCacheSqlLimit: 2048
