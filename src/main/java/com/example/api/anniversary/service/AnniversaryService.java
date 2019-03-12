@@ -4,6 +4,6 @@ import com.example.api.anniversary.entity.Anniversary;
 
 public interface AnniversaryService {
 
-    Anniversary getInfo();
+    Anniversary getInfo(String sortName);
 
 }

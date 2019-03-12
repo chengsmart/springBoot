@@ -13,8 +13,8 @@ public class AnniversaryServiceImpl implements AnniversaryService {
     private InfoMapper infoMapper;
 
     @Override
-    public Anniversary getInfo() {
-        Anniversary anniversaryInfo = infoMapper.getSweetInfo();
+    public Anniversary getInfo(String sortName) {
+        Anniversary anniversaryInfo = infoMapper.getSweetInfo(sortName);
         return anniversaryInfo;
     }
 

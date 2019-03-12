@@ -8,6 +8,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -17,13 +18,10 @@ public class AnniversaryController {
     @Autowired
     private AnniversaryService anniversaryService;
 
-    @Autowired
-    private InfoMapper infoMapper;
-
     @ApiOperation(value = "获取用户信息", notes = "")
     @GetMapping("/info")
-    public Anniversary getLoverInfo() throws Exception {
-        Anniversary anniversaryInfo = anniversaryService.getInfo();
+    public Anniversary getLoverInfo(@RequestParam(value="sortName") String sortName) throws Exception {
+        Anniversary anniversaryInfo = anniversaryService.getInfo(sortName);
         return anniversaryInfo;
     }
 
