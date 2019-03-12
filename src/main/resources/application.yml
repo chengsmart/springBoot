@@ -2,8 +2,8 @@
 # DATASOURCE
 jdbc:
   dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
-  url: jdbc:mysql://127.0.0.1:3306/spring_boot_db?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
-  databaseName: student
+  url: jdbc:mysql://127.0.0.1:3306/anniversary?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+  databaseName: anniversary
   serverName: 127.0.0.1
   username: root
   password:

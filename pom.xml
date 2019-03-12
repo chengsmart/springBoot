@@ -120,6 +120,11 @@
 			<version>2.2.2</version>
 		</dependency>
 
+		<!--封装对Java 8的时间日期API序列化-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

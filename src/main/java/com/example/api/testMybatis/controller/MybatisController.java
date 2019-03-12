@@ -20,7 +20,7 @@ public class MybatisController {
     @GetMapping( "/user/{userid}")
     public String getUserName(@PathVariable(value = "userid") Integer userid) {
 
-        String  name=userService.getUserName(userid);
+        String name = userService.getUserName(userid);
         return "获取到的用户姓名为："+name;
     }
 
