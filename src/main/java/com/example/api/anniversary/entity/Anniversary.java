@@ -6,6 +6,7 @@ public class Anniversary {
     private String tickname;
     private String name;
     private Date birthday;
+    private Date love_day;
 
     public String getTickname() {
         return tickname;
@@ -29,5 +30,13 @@ public class Anniversary {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public Date getLove_day() {
+        return love_day;
+    }
+
+    public void setLove_day(Date love_day) {
+        this.love_day = love_day;
     }
 }
