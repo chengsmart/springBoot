@@ -30,7 +30,7 @@ public class ApiControllerTests {
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/test").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello world111")));
+                .andExpect(content().string(equalTo("Hello world")));
     }
 
 }

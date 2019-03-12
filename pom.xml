@@ -11,6 +11,8 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
+	<packaging>jar</packaging>
+
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -128,10 +130,14 @@
 	</dependencies>
 
 	<build>
+		<finalName>Demo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.Application</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
